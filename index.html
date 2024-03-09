@@ -1,18 +1,66 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
-        <title>Form Without Semantic HTML</title>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Form With Semantic HTML</title><link rel="stylesheet" href="style.css">
     
     </head>
+
     
     <body>
 
-        <h1>Form Without Semantic HTML</h1>
+        <h1 style="color: aqua;">Form With Semantic HTML</h1>
         
         <form>
-            <label for=*fullname*>Full Name:</label>
-            <input type="text" id="full name" name="fullname" required>
+            <fieldset>
+            <legend>User Information</legend>
+            <section>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="full name" name="fullname" required>
+            </section>
+            
+            <section>
+                <label for="email">Email:</label> 
+                <input type="email" id="email" name="email" required>
+            </section>
+            
+            <section>
+                <label for="Password">Password:</label>
+                <input type="Password" id="Password" name="Password" required>
+            </section>
+            
+            <section>
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="select">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </section>
+        </fieldset>
+            
+            
+            <section>
+                <label for="newsletter">Subscribe to Newsletter:</label>
+                <input type"checkbox" id="newsletter" name="newsletter">
+            </section>
+            
+            <section>
+                <label for="Comments">Comments:</label>
+                <textarea name="Comments" id="Comments" rows="4"></textarea>
+            </section>
+            
+
+            <button type="submit">Submit</button>
+
         </form>
+
     </body>
+    
+    </html>
+
+
+
