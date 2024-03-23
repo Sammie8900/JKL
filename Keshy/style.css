@@ -22,8 +22,9 @@
         }
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 30px;
+    
 }
 
 .flex-item {
@@ -45,3 +46,45 @@
     padding: 20px;
     text-align: center;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and {max-width: 488px;} {
+    #heading {
+        font-size: 30px;
+    }
+    
+}
+
+#description {
+    font-size: 20px;
+}
+
+.content {
+    background-color: rgba(196, 251, 255, 0.397);
+    padding: 20px;
+    text-align: center;
+}
+
+#heading {
+    color: darkgray;
+}
+
+#description {
+    color: rgb(87, 11, 11);
+}
+
+@media screen and {max-width: 768px;} {
+    #heading {
+        font-size: 50px;
+    }
+    
+}
+
+#description {
+    font-size: 16px;
+}
+
